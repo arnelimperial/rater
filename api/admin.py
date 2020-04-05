@@ -1,3 +1,5 @@
 from django.contrib import admin
+from . import models
 
-# Register your models here.
+apiModels = [models.Movie, models.Rating]
+admin.site.register(apiModels)
